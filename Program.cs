@@ -50,7 +50,7 @@ namespace Valkryie
                     Console.WriteLine($"Port: {connection.Port}");
                     Console.WriteLine("\n");
                 }
-                
+
                 // Disconnnecting from unknown (right now non-local) connections
                 // REENABLE BEFORE RELEASE
                 // REENABLE BEFORE RELEASE
@@ -58,7 +58,10 @@ namespace Valkryie
 
                 /// <summary>
                 /// Starting to monitor accounts on the system and saving them to the class
+                /// This starts with finding the executables and saving the name, path and hash to the Valyrie database
                 /// </summary>
+                ExecutableScanner.ScanForExeFilesAndStoreInDatabase();
+                Console.WriteLine("Scanning and storing completed. Now printing the results to the console. \n")
                 BaseLineAccounts accountScanner = new BaseLineAccounts();
 
                 try
