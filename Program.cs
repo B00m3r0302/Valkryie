@@ -32,6 +32,12 @@ namespace Valkryie
                 Console.WriteLine("Type exit to Exit the program...");
 
                 /// <summary>
+                /// Initializing the database to store the executable file details 
+                /// </summary>
+                DataAccess.InitializeDatabase();
+                Console.WriteLine("SQLite database initialized with the BaseLineExecutables and CurrentExecutables tables");
+                
+                /// <summary>
                 /// Starting to monitor for internet connections and saving them to the class
                 /// </summary>
                 InternetConnectionsDetails[] activeConnections = InternetConnectionsDetails.GetActiveConnections();
