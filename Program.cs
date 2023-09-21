@@ -51,8 +51,10 @@ namespace Valkryie
                     Console.WriteLine("\n");
                 }
                 
-                // Disconnnecting from unknown (right now non-local) connections 
-                ConnectionRemediation.DisconnectUnknownConnections();
+                // Disconnnecting from unknown (right now non-local) connections
+                // REENABLE BEFORE RELEASE
+                // REENABLE BEFORE RELEASE
+                // ConnectionRemediation.DisconnectUnknownConnections();
 
                 /// <summary>
                 /// Starting to monitor accounts on the system and saving them to the class
