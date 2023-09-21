@@ -44,7 +44,7 @@ namespace Valkryie
                     }
                 }
 
-                Console.WriteLine("Disconnected non-local network connections")
+                Console.WriteLine("Disconnected non-local network connections");
             }
 
             catch (Exception ex)
